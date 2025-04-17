@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot App</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+  <div class="app">
+    <header>
+       
+        <div class="logo">Student Tribe</div>
+        <div class="menu" onclick="toggleMenu()">☰</div>
+        <nav id="navLinks">
+          <a href="./events.html">Upcoming Events</a>
+          <a href="./internships.html">Internships</a>
+        </nav>
+      </header>
+      
+<div class="inner-app">
+
+    <main>
+      <div id="chatWindow"></div>
+      <form id="chatForm">
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+</div>
+<script type="module">
+    import { v4 as uuidv4 } from 'https://cdn.skypack.dev/uuid';
+  
+    // Generate a unique UUID for the thread ID
+    const threadId = uuidv4();
+    console.log("Generated UUID:", threadId);
+  
+    // Use this UUID in your chatbot logic
+    window.threadId = threadId; // Set it globally so your main script can use it
+  </script>
+  <script  src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+</body>
+</html>

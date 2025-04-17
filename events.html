@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot App</title>
+  <link rel="stylesheet" href="./events-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+  <div class="app">
+    <header>
+       
+        <div class="logo">Student Tribe</div>
+        <div class="menu" onclick="toggleMenu()">☰</div>
+        <nav id="navLinks">
+          <a href="./index.html">Career Assistant</a> 
+          <a href="./internships.html">Internships</a>
+        </nav>
+      </header>
+      <main class="events-container">
+        <h1 class="events-heading">Upcoming Events</h1>
+        <div id="events-list" class="events-list">
+          <!-- Event cards will be injected here -->
+        </div>
+      </main>
+      
+
+  <script src="./events.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</body>
+</html>

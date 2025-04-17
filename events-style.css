@@ -1,0 +1,201 @@
+:root {
+    --primary: #6a0dad;
+    --background: #ffffff;
+    --accent: #e6e6fa;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    min-width:320px;
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .inner-app {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px var(--shadow);
+    z-index: 1000;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+
+  
+  .events-heading {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4b0082;
+  }
+  
+  .events-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Card Styling */
+  .event-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .event-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4b0082;
+  }
+  
+  .event-date {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .event-description {
+    margin: 10px 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .event-info {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+  
+  .organizer {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .register-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #6a0dad;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .register-btn:hover {
+    background-color: #5a009c;
+  }
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ddd;
+  }
+  
+  /* === HAMBURGER MENU === */
+  .menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* hidden by default for large screens */
+    margin-right: 1rem;
+  }
+  
+ 
+  
+  @media (max-width: 522px) {
+    .app {
+      flex-direction: column;
+    }
+    .inner-app {
+        display: flex;
+        
+    
+      }
+      header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+      }
+    
+      .menu {
+        display: block;
+      }
+    
+      nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        padding-top: 1rem;
+      }
+    
+      
+      nav.show {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      nav a {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+      }
+    
+      
+   
+ 
+  
+}
+  

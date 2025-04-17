@@ -1,0 +1,139 @@
+:root {
+    --primary: #6a0dad;
+    --background: #ffffff;
+    --accent: #e6e6fa;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9ff;
+  }
+  
+  header {
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin: 25px 0 15px;
+    color: #333;
+    font-size: 28px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+  }
+  
+  .internship-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .internship-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .internship-role {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .internship-company {
+    font-size: 14px;
+    
+  }
+  
+  .internship-info {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .requirements {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #444;
+  }
+  
+  .apply-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #6a0dad;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 522px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #6a0dad;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: left;
+      padding: 15px;
+    }
+  
+    .menu a {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        margin-left:1.2rem;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .menu.show {
+      display: flex;
+    }
+  }
+  
