@@ -13,7 +13,7 @@ async function fetchInternships() {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({}) // Send empty body if no parameters needed
+      body: JSON.stringify({})
     });
 
     if (!response.ok) {
@@ -50,3 +50,4 @@ async function fetchInternships() {
 }
 
 fetchInternships();
+
