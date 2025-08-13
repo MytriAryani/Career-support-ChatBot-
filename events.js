@@ -3,11 +3,11 @@ const eventsList = document.getElementById('events-list');
 async function loadEvents() {
   try {
     const response = await fetch('https://akshay050702-chatbot.hf.space/get_events', {
-      method: 'POST', // Explicitly using POST
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({}) // Send an empty JSON body
+      body: JSON.stringify({}) 
     });
 
     if (!response.ok) {
@@ -57,3 +57,4 @@ function toggleMenu() {
   const nav = document.getElementById("navLinks");
   nav.style.display = nav.style.display === "flex" ? "none" : "flex";
 }
+
