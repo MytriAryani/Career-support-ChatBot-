@@ -145,11 +145,11 @@
     color: #ddd;
   }
   
-  /* === HAMBURGER MENU === */
+
   .menu {
     font-size: 1.5rem;
     cursor: pointer;
-    display: none; /* hidden by default for large screens */
+    display: none; 
     margin-right: 1rem;
   }
   
@@ -198,4 +198,5 @@
  
   
 }
+
   
